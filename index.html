@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication Page</title>
+</head>
+<body>
+    <h1>Welcome to the Authentication Page</h1>
+    <p>Click the button below to authenticate:</p>
+    <button onclick="authenticate()">Authenticate</button>
+
+    <script>
+        function authenticate() {
+            // Redirect to the local callback URL after authentication
+            window.location.href = "http://localhost:5000/callback";
+        }
+    </script>
+</body>
+</html>
